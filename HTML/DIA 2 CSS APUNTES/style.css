@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+div{
+    height: 100px;/*podemos utilizar %, px, vh, vw*/
+    background-color: blue;
+    border: 3px red solid /*border-style*/;
+    /*width: 400px;*/
+    width: 20%;
+    display: inline-block;
+    border-bottom-style: dashed;
+    border-bottom-color: black;
+}
+/*.div5{
+    display: none;
+}*/
+div.relative{
+    position: relative;
+    background-color: green;
+    width: 100%;
+    top: 50px;
+}
+
+div.absolute{
+    position: absolute;
+    background-color: yellow;
+    display: inline-block;
+    top: 100px;
+    left: 200px;
+    bottom: 30px;
+    right: 30px;
+}
+div.static{ 
+    position: static;
+    background-color: black;
+}
+div.fixed{
+    position: fixed;
+    background-color: orange;
+    width: 20vw;
+    height: 20vh;
+    bottom: 0%;
+}
+div.imagen-absoluta{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+}

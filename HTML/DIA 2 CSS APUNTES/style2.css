@@ -1,0 +1,44 @@
+div > p{ /*todos los p que haya dentro de un div*/
+    color: red;
+}
+div + p{ /*el p siguiente a un div (fuera del div, despues vaya)*/
+    color: green;
+}
+.pepito + .manolito{/*el manolito que va después de pepito*/
+    color: yellow;
+}
+p ~ p{/*todos los p que estén entre p*/
+    color:blue;
+}
+li:last-child{/*ultimo elemento de la lista*/
+    color: magenta;
+}
+li:first-child{/*primer elemento de la lista*/
+    color: burlywood;
+}
+a:hover{/*si pones el raton encima se cambia de color a azul*/
+    color: red;
+}
+a:visited{/*cambia de color si lo has visitado*/
+    color: red;
+}
+button:hover{
+    color: white;
+    background-color: red;
+    font-size: x-large;
+}
+input:focus{
+    border: 3px solid green;
+}
+div:before{
+    content: "hola soy el before";
+    display:block;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+
+}
+div:after{
+    content:"hola soy el after";
+    color: rgb(129, 0, 0);
+}

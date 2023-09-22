@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header{
+    background-color: white;
+    height: 10vh;
+    width: 100vw;
+    align-items: flex-end;
+}
+.prim-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.img-logo{
+    width: 30px;
+    height: 40px;
+    justify-content:flex-start;
+    object-fit:fill;
+    padding-left: 10px;
+}
+.tit1{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+.prim-p{
+    width: 100%;
+    display:block;
+    margin-right: 20px;
+}
+.sec-div{
+    display: block;
+    justify-content: flex-end;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.tit2{
+    width: 100%;
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.ter-div{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.boton1{
+    width: 150px;
+    background-color: rgb(137, 137, 242);
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.boton2{
+    width:150px;
+    background-color: rgb(137,137,242);
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.sec-p{
+    width: 150px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.quad-div{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+.ter-p{
+    width:150px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.prim-inp{
+    display: block;
+    width:150px;
+    margin-left: 40px;
+}
+.quint-div{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+.quad-p{
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sec-inp{
+    display: block;
+    width: 150px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.sis-div{
+    width:100%;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+.sept-div{
+    width:100%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.oct-div{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 350px;
+    margin-left: 10px;
+}
+.google{
+    width:15%;
+    padding-left: -40%;
+    
+}
+main{
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 100px;
+}

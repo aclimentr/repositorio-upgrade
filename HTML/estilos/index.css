@@ -1,0 +1,29 @@
+#parr3{
+    color: yellow;
+}
+.parr1{
+    color: blue;
+}
+p,  a{
+    font-size: 20px;
+}
+p.parr1{
+    text-transform: capitalize;
+}
+#parr3.parr1{
+    text-decoration: underline;
+}
+section{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    background-color: yellow;
+    width: 100%;
+    height: 10%;
+}
+main{
+    width: 100%;
+    height: 90%;
+}

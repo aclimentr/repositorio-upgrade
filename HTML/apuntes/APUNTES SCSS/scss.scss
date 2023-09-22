@@ -1,0 +1,25 @@
+$color-principal: blue;
+$padding:20px;
+
+
+p{
+    color: $color-principal;
+    font-weight: normal;
+}
+div{
+    background-color: blue;
+    padding: $padding;
+    p{
+        color:yellow;
+        font-size: 20px;
+        span{
+            color:red;
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+@import url(blocks/contact.scss);
+@import url(blocks/pepito.scss);

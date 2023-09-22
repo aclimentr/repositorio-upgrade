@@ -1,0 +1,21 @@
+@import url(blocks/contact.scss);
+@import url(blocks/pepito.scss);
+p {
+  color: blue;
+  font-weight: normal;
+}
+
+div {
+  background-color: blue;
+  padding: 20px;
+}
+div p {
+  color: yellow;
+  font-size: 20px;
+}
+div p span {
+  color: red;
+}
+div img {
+  max-width: 100%;
+}/*# sourceMappingURL=scss.css.map */

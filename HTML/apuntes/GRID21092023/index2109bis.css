@@ -1,0 +1,47 @@
+.grid{
+    display: grid;
+    /*grid-template-columns: 20% 20% 20% 20% 20%;*/
+    /*grid-template-columns: 25% 50% 25%;*/
+    /*grid-template-columns: 200px 80% auto;*/
+    /*grid-template-columns: 3fr 5fr 2fr;*/
+    grid-template-columns: repeat(5,1fr);
+    /*fr significa fracciones*/
+    grid-auto-rows: 200px;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+
+.box{
+    background-color: green;
+    border: 2px solid red;
+}
+.box1{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: large;
+    font-style: oblique;
+    color: white;
+}
+.boton{
+    width: 100%;
+    background-color: brown;
+}
+.box5{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.box9{
+    background-color: aqua;
+    grid-column: 4/span 1;/*span es un espacio dentro del grid, de la cajita de color vaya*/
+    grid-row: 3/span 1;
+}
+.colorred{
+    color:red;
+}
+.ftsz{
+    font-size: 25px;
+}

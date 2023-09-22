@@ -1,0 +1,20 @@
+.contacto{
+    background-color: red;
+    color:white;
+    &__form{
+        background-color: aqua;
+    }
+    &__input{
+        line-height: 40px;
+        display: block;
+        width:40px;
+    }
+    &__button{
+        &--reset{
+            color: $color-principal;
+        }
+        &--submit{
+
+        }
+    }
+}

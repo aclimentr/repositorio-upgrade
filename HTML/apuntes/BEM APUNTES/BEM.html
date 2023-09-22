@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bend.css">
+</head>
+<body>
+    <!--  BEM : BLOQUE ELEMENTO MODIFICADOR  -->
+    <header class="navbar">
+        <div class="navbar-list">
+           <a href="apartado1" class="navbar-list__link">Apartado1</a>
+           <a href="apartado2" class="navbar-list__link navbar-list__link--active">Apartado2</a><!--este seria el modificador (el active)-->
+           <a href="apartado3" class="navbar-list__link">Apartado3</a>
+           <a href="apartado4" class="navbar-list__link">Apartado4</a>
+        </div>
+        <div class="navbar-logo">
+            <img class="navbar-logo__image"/>
+
+        </div>
+    </header>
+    <main>
+        <div class="contacto">
+            <form class="contacto__form">
+                <input type="text" class="contacto__input">
+                <input type="text" class="contacto__input">
+                <input type="text" class="contacto__input">
+                <button class="contacto__button--reset"></button>
+                <button class="contacto__button--submit"></button>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
