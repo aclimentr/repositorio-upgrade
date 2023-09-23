@@ -1,0 +1,96 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    box-shadow:5px 5px 5px grey;
+}
+.prim-div{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    box-shadow: 5px 5px 5px grey;
+}
+.img-logo{
+    position:absolute;
+    width: 60%;
+    height: 60%;
+    right:68%;
+    bottom: 28%;
+}
+.tit1{
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    right: 45%;
+    bottom: 30%;
+}
+.prim-p{
+    position:absolute;
+    font-size: large;
+    width:30%;
+    height: 30%;
+    left:90%;
+    bottom:50%;
+}
+.link{
+    position: absolute;
+    font-size: large;
+    left: 92%;
+    bottom: 25%;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.section{
+    /*background-color: grey;*/
+    height: 100%;
+}
+.ter-div{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.tit2{
+    position: absolute;
+    font-size: x-large;
+    top:10%;
+    left: 41%;
+}
+.ter-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.boton1{
+    position:absolute;
+    width:230px;
+    height:30px;
+    top:30%;
+    left:33%;
+}
+.boton2{
+    position:absolute;
+    width:230px;
+    height: 30px;
+    top:30%;
+    left:50%;
+}
+.google{
+    width:5%;
+    height:5%;
+}
+.facebook{
+    width:5%;
+    height:5%;
+}
+footer{
+    width:100vw;
+    height: 10vh;
+}
+

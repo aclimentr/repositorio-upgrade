@@ -9,6 +9,7 @@ header{
     width: 100vw;
     align-items: flex-end;
 }
+}
 .prim-div{
     height: 100%;
     width: 100%;
@@ -146,7 +147,7 @@ section{
     position:absolute; 
 }
 main{
-    width: 100%;
+    width: 100vw;
     margin-left: 0px;
     margin-top: 0px;
 }
@@ -158,4 +159,8 @@ main{
     border: dashed;
     border-color: grey;
     border-radius: 20px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
 }
