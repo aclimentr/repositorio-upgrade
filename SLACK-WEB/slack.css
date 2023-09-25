@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.logo-slack{
+    width: 80px;
+    height: 80px;
+}
+.header{
+    grid-area: header;
+}
+.grid-container{
+    border-radius: 4px;
+    padding: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "header"
+        "nav1"
+        "main"
+        "section1"
+        "section2"
+        "section3"
+        "footer";
+}

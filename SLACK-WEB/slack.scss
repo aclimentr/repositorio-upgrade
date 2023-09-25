@@ -1,0 +1,16 @@
+body{
+    font-family: sans-serif;
+    header{
+        .respmenu{
+            color: violet;
+            text-decoration: none;
+            display:block;
+            padding: 10px 20px;
+            border-bottom: 2px solid white;
+            max-width: 200px;
+            background: rgb(145, 138, 2);
+            font-variant:small-caps;
+            text-shadow: 1px 1px black;
+        }
+    }
+}
