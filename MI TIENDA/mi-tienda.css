@@ -4,6 +4,15 @@
 }
 p{
     font-weight: bold;
+    font-style:inherit;
+    font-family: fantasy;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 50px;
 }
 body{
     width: 100vw;
@@ -13,6 +22,8 @@ header{
     height: 10vh;
     /*background-color: grey;*/
     display:flex;
+    background-color: rgb(81, 97, 97);
+    
 }
 .div-header{
     width: 30%;
@@ -53,24 +64,28 @@ header{
     width: 35px;
     height: 30px;
 }
-ul{
+.ul-1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
     left:1%;
     list-style: none;
+    font-family: fantasy;
 }
 .promo{
     color: orange;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
 main{
     min-height: 100vh;
     width: 100%;
-    /*background-color: aqua;*/
+    background-color: rgb(81, 97, 97);
 }
-
-section{
+.section1{
     /*background-color: brown;*/
     width: 100%;
     min-height: 80vh;
@@ -79,7 +94,6 @@ section{
     align-items:flex-start;
     align-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
 }
 .imagen-ropa{
     display: flex;
@@ -90,6 +104,7 @@ section{
     margin: 20px;
     border-radius: 100px;
     box-shadow: 10px 5px 5px black;
+    background-color: rgb(91, 126, 126);
 }
 .imagen1{
     width: 100%;
@@ -203,10 +218,11 @@ section{
 }
 footer{
     width: 100vw;
-    min-height: 70vh;
-    background-color: rgb(164, 164, 240);
+    min-height: 80vh;
+    /*background-color: rgb(164, 164, 240);*/
     display: flex;
     flex-direction: column;
+    background-color: rgb(81, 97, 97);
 }
 .div-bordes{
     width: 100%;
@@ -236,26 +252,46 @@ footer{
     padding-left: 5px;
 }
 .container{
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     display:flex;
     flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ul-2{
+    list-style: none;
+    font-family: fantasy;
 }
 .compras{
     display: flex;
+    width: 20%;
+    height: 60%;
 }
 .servicios{
     display: flex;
+    width: 20%;
+    height: 60%;
 }
 .empresa{
     display: flex;
+    width: 20%;
+    height: 60%;
 }
 .politicas{
     display: flex;
+    width: 20%;
+    height: 60%;
 }
 .social{
     display: flex;
+    width: 20%;
+    height: 60%;
 }
+
 .pagos{
     display: flex;
+    width: 20%;
+    height: 60%;
 }
