@@ -7,3 +7,6 @@ const alien = {
 for (let key in alien) {
     console.log(key + ' ->' + alien[key]);
 }
+// for (let cartillaAlien of alien) {
+//     console.log(cartillaAlien)
+// }

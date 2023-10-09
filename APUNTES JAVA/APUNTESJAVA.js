@@ -176,6 +176,46 @@ console.log(persona.nombre); //Luis
 persona.telefono = 6266754894 //si existe la propiedad la modifica y si no existe la añade
 console.log(persona)
 
+//VARIABLE BOOLEAN
+let booleano = false;
+
+console.log(booleano == false);
+console.log(booleano != true);
+
+// Usa un for para remplazar todas las comidas que no sean veganas con las comidas del array de frutas. 
+//Recuerda no usar frutas duplicadas. Finalmente, imprime el array resultante.
+const comida = {isVegan: true}
+if(comida.isVegan != true){
+    //SOLO ENTRA SI isVegan es false
+}
+
+
+if(comida.isVegan == false){
+    //SOLO ENTRA SI isVegan es false
+}
+
+
+comida.isVegan = !comida.isVegan;
+
+if(!comida.isVegan){
+    //SOLO ENTRA SI isVegan es false
+}else{}
+
+
+const objeto = {}
+
+console.log(objeto);
+
+objeto.name = "pepe"
+
+console.log(objeto);
+
+
+objeto["name"] = "manolito"
+
+console.log(objeto);
+
+
 //BUCLES
 
 //BUCLE FOR --> REPITE EL CONTENIDO DEL BUCLE TANTAS VECES HASTA QUE SE CUMPLE UNA CONDICION
@@ -276,3 +316,397 @@ nombre = "pepito"
 
 const nombre2 = "juanito"
 // nombre2 = "manolito" //Falla al asignar valor a una variable
+
+
+//FUNCIONES 
+//LA CREAMOS  CON --> FUNCTION NOMBREFUNCION(PARAMETROS){ LO QUE HAGA MI FUNCION}
+//LA EJECUTAMOS CON --> NOMBREFUNCION(PARAMETROS)
+
+function saluda(nombre){
+    console.log("saluda", nombre);
+}
+
+let nombre = "pepe";
+saluda(nombre);
+
+saluda("juan");
+
+function suma(a, b, c){
+    return a + b + c;
+}
+
+let resultado = suma(3, 6, 9);
+console.log(resultado);
+
+function multiplicar(a = 4, b = 5){
+    console.log(a * b);
+}
+
+
+multiplicar();
+multiplicar(5);
+multiplicar(5, 8);
+
+let myDiv$$ = document.querySelector('div');
+console.log(myDiv$$);
+
+let myDivPepito$$ = document.querySelector('.pepito');
+console.log(myDivPepito$$);
+
+let myDivManolito$$ = document.querySelector('#manolito');
+console.log(myDivManolito$$);
+
+let myDivs$$ = document.querySelectorAll('div');
+console.log(myDivs$$);
+
+
+//METODOS ANTIGUOS
+let divs$$ = document.getElementsByTagName('div');
+console.log(divs$$[2]);
+
+let divsPepito$$ = document.getElementsByClassName('pepito');
+console.log(divsPepito$$);
+
+let divManolito$$ = document.getElementById('manolito');
+console.log(divManolito$$);
+
+let anchorGoogle$$ = document.querySelector('[href="http://www.google.com"]');
+console.log(anchorGoogle$$);
+
+myDiv$$.textContent = "Este texto lo he cambiado con javascript";
+myDiv$$.setAttribute('data-info', "soy pepito")
+
+myDiv$$.classList.add("divNuevo")
+myDiv$$.classList.add("divNuevo2")
+myDiv$$.classList.add("divNuevo3")
+
+myDiv$$.classList.remove("divNuevo")
+
+
+let p$$ = document.createElement("p");
+p$$.textContent = "soy el parrafo que he creado";
+myDiv$$.appendChild(p$$);
+myDiv$$.innerHTML = `<p>me he includo con innerHtml</p>`;
+
+let divNuevo$$ = document.createElement("div");
+divNuevo$$.textContent = "soy el div nuevo";
+
+document.body.appendChild(divNuevo$$);
+
+const simpsons = [
+    {
+        name: "Homer",
+        image: "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
+    },
+    {
+        name: "Marge",
+        image: "https://www.neo2.com/wp-content/uploads/2019/12/dia-de-marge-simpson-17-diciembre-neo2-1.jpg"
+    },
+    {
+        name: "Bart",
+        image: "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png"
+    },
+    {
+        name: "Lisa",
+        image: "https://assets.stickpng.com/images/5eb95cf617f3c600044a2915.png"
+    },
+    {
+        name: "Maggie",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKcaTMa0-NUVdc7-4A8zgWOadopWSziF_hr_8Ncmmk&s"
+    }
+]
+
+
+for (const personaje of simpsons) {
+    let divSimpson$$ = document.createElement('div');
+    divSimpson$$.classList.add('personaje');
+    let h4Name$$ = document.createElement('h4');
+    let imgSimpson$$ = document.createElement('img');
+
+    h4Name$$.textContent = personaje.name;
+    imgSimpson$$.setAttribute('src', personaje.image);
+    imgSimpson$$.setAttribute('alt', personaje.name);
+    imgSimpson$$.style = "width: 250px;"
+    
+    divSimpson$$.appendChild(h4Name$$);
+    divSimpson$$.appendChild(imgSimpson$$);
+
+    divNuevo$$.appendChild(divSimpson$$);
+
+}
+
+
+// ARROW  FUNCTIONS
+// FUNCTION NOMBRE(PARAMETROS) { LO QUE LA FUNCION }
+// CONST NOMBRE = (PARAMETROS) => { LO QUE LA FUNCION }
+
+function diHola(nombre) {
+    console.log("hola", nombre);
+}
+
+const diHolaArrow = (nombre) => {
+    console.log("hola", nombre);
+}
+
+diHola("Pepe")
+diHolaArrow("Juan")
+
+const diHolaArrow2 = (nombre) => console.log("hola", nombre);
+diHolaArrow2("Luis")
+
+
+function suma(numA, numB){
+    return numA + numB;
+}
+
+const sumaArrow = (numA, numB) => {
+    return numA + numB;
+}
+
+console.log(suma(3, 4));
+console.log(sumaArrow(5,6));
+
+
+const sumaArrow2 = (numA = 5, numB = 4) =>  numA + numB;
+console.log(sumaArrow2(3, 3));
+console.log(sumaArrow2(3));
+console.log(sumaArrow2());
+
+const devuelveObjeto = () => {
+    return {name: "pepe", apellido: "perez"}
+}
+
+const devuelveObjeto2 = () => ({name: "luis", apellido: "lopez"})
+
+console.log(devuelveObjeto());
+console.log(devuelveObjeto2());
+
+
+//CALLBACKS
+// ES AQUELLA FUNCION QUE PASAMOS COMO PARAMETRO A OTRA FUNCION
+const hola = (nombre) => {
+    console.log("Hola", nombre);
+}
+
+const adios = (nombre) => {
+    console.log("Adios", nombre);
+}
+
+
+const saludar = (nombre, callback) => {
+    callback(nombre)
+}
+
+saludar("Pepe", hola);
+saludar("Pepe", adios);
+
+
+const suma2 = (numA, numB) => {return numA + numB};
+const resta = (numA, numB) => {return numA - numB};
+const multiplica = (numA, numB) => {return numA * numB};
+const divide = (numA, numB) => { return numA / numB};
+
+const operacion = (num1, num2, opera) => {
+    return opera(num1, num2);
+}
+
+console.log(operacion(4, 6, suma2));
+console.log(operacion(5, 2, resta));
+console.log(operacion(8, 2, multiplica));
+console.log(operacion(9, 3, divide));
+
+
+//ES6
+//TEMPLATE STRING
+//Una alternativa para no estar concatenando todo el rato con el +
+let nombre = "Pepe";
+let apellido = "Perez";
+let edad = 25;
+let foto = 'https://images7.memedroid.com/images/UPLOADED430/6075afd2d51ec.jpeg';
+let concatNombreApellido = "Me llamo "+ nombre + " " + apellido;
+console.log(concatNombreApellido);
+
+
+let concatTemplateString = `Me llamo ${nombre} ${apellido}`;
+console.log(concatTemplateString);
+
+// const div$$ = document.createElement("div");
+// div$$.innerHTML = `
+//     <p>Nombre: ${nombre}</p>
+//     <p>Apellido: ${apellido}</p>
+//     <p>Edad: ${edad}</p>
+//     <img src="${foto}" alt="${nombre}"/>  
+// `;
+
+// "<p>Nombre: "+ nombre + " </p>
+// <p> Apellido: " +apellido + " </p>
+// <img src = " + foto + " alt=" + nombre  + " /> "
+
+
+//MAP
+//RECORREMOS UN ARRAY Y DEVOLVEMOS UNO NUEVO CON LA INFORMACIÓN QUE QUERAMOS
+//ARRAY.MAP((ELEMENTO) => HAGO LO QUE SEA CON EL ELEMENTO Y LO DEVUELVO)
+
+const superheroes = [
+    {
+        name: 'Peter Parker',
+        alias: 'Spiderman',
+        power: 50
+    },{
+        name: 'Bruce Wayne',
+        alias: 'Batman',
+        power: 70
+    },{
+        name: 'Clark Kent',
+        alias: 'Superman',
+        power: 90
+    }
+]
+
+const aliasSuperheroes = superheroes.map((heroe) => heroe.alias)
+console.log(aliasSuperheroes);
+
+
+const newSuperHeroes = superheroes.map((heroe, index) => ({
+    id: index + 1,
+    name: heroe.name,
+    alias: heroe.alias,
+    powerfull: heroe.power
+}))
+
+console.log(newSuperHeroes);
+
+//FILTER
+// RECORRE MI ARRAY Y PARA CADA ELEMENTO COMPRUEBA UNA CONDICION Y NOS DEVUELVE EL ELEMENTO
+// ARRAY.FILTER((ELEMENTO) => CONDICION)
+const personajes = [
+    {name: "batman", tipo:"heroe", power: 70, isAlive: false},
+    {name: "spiderman", tipo:"heroe", power: 50, isAlive: true},
+    {name: "joker", tipo:"villano", power: 60, isAlive: false},
+    {name: "dr. octopus", tipo:"villano", power: 40, isAlive: true},
+    {name: "superman", tipo:"heroe", power: 90, isAlive: true },
+    {name: "hulk", tipo:"heroe", power: 110, isAlive: true},
+    {name: "duende verde", tipo:"villano", power: 75, isAlive: false}
+]
+
+const heroes = personajes.filter((personaje) => personaje.tipo === "heroe");
+console.log(heroes);
+
+
+const poderosos = personajes.filter((personaje) => {
+    if(personaje.power > 70){
+        return personaje
+    }    
+});
+console.log(poderosos);
+
+const personajesMuertos = personajes.filter((personaje) => !personaje.isAlive);
+console.log(personajesMuertos);
+
+const personajesAcabadosMan = personajes.filter((personaje) => personaje.name.includes('man') || personaje.power >= 70);
+console.log(personajesAcabadosMan);
+
+//FIND
+// RECORRE UN ARRAY Y PARA CADA ELEMENTO NOS COMPRUEBA UNA CONDICIÓN Y NOS DEVUELVE EL PRIMERO QUE LA CUMPLA
+// ARRAY.FIND((ELEMENTO) => CONDICION )
+
+const firstVillano = personajes.find((personaje) => personaje.tipo === "villano")
+console.log(firstVillano)
+
+
+const firstVillanoAlive = personajes.find((personaje) => personaje.tipo === "villano" && personaje.isAlive)
+console.log(firstVillanoAlive)
+
+
+
+//REDUCE
+// RECORREMOS UN ARRAY Y PARA CADA ELEMENTO AÑADIMOS UN VALOR A UN ACUMULADOR
+// ARRAY.REDUCE((ACUMULADOR, ELEMENTO) => SUMA ACUMULADOR + VALOR, VALOR INICIAL ACUMULADOR)
+
+const totalPower = personajes.reduce((acc, personaje) => acc + personaje.power, 0);
+console.log(totalPower);
+
+const totalPowerVillanos = personajes.filter((personaje) => personaje.tipo === "villano")
+                            .reduce((acc, personaje) => acc + personaje.power, 0)
+console.log(totalPowerVillanos);
+
+const productos = [
+    {
+        name: "pantalon vaquero",
+        cantidad: 2,
+        precio: 20
+    },
+    {
+        name: "camiseta blanca",
+        cantidad: 1,
+        precio: 10
+    },
+    {
+        name: "calcetines",
+        cantidad: 3,
+        precio: 2
+    }
+]
+
+const total = productos.reduce((acc, producto) => acc + (producto.cantidad * producto.precio),0);
+console.log(total);
+
+//REPASO EVENTOS
+
+const button$$ = document.createElement('button');
+
+button$$.textContent = "Mi botoncito";
+
+document.body.appendChild(button$$);
+
+// ELEMENTO.ADDEVENTLISTENER(TIPO, FUNCION)
+button$$.addEventListener('click', function(){console.log("Hola")})
+button$$.addEventListener('click', () => { console.log("Hola Soy Arrow")});
+
+function hola() {
+    console.log("Hola Funcion Externa");
+}
+
+const holaArrow = () => {
+    console.log("Hola Funcion Externa Arrow");
+}
+
+button$$.addEventListener('click', hola);
+button$$.addEventListener('click', holaArrow);
+
+
+const input$$ = document.createElement('input');
+document.body.appendChild(input$$);
+
+button$$.addEventListener('click', function(){
+    console.log("Hola Input", input$$.value)
+})
+
+
+button$$.addEventListener('click', () => {
+    console.log("Hola Arrow Input", input$$.value)
+})
+
+function input (texto) {
+    console.log("Hola Input Externa", texto);
+}
+
+const inputArrow = (texto) => {
+    console.log("Hola Input Arrow Externa", texto);
+}
+
+button$$.addEventListener('click', () => input(input$$.value))
+button$$.addEventListener('click', () => inputArrow(input$$.value))
+
+
+//EVENT PREDEFINIDO
+input$$.addEventListener('input', function(event){
+    console.log(event.target)
+})
+
+function inputEvent(event, nombre){
+    console.log(event.target.value, nombre);
+}
+
+// input$$.addEventListener('input', inputEvent )
+input$$.addEventListener('input', (evento) => inputEvent(evento, "pepe") )

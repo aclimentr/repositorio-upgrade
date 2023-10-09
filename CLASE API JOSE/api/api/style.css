@@ -1,0 +1,18 @@
+/* *{
+    background-color: black;
+} */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main__figure{
+    width: 400px;
+}
+img{
+    object-fit: cover;
+    object-position: top;
+    width: 50%;
+    height: 200px;
+
+}

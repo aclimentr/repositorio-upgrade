@@ -5,8 +5,9 @@ const toys = [
     {id: 40, name: 'El gato con Guantes'},
     {id: 40, name: 'El gato felix'}]
 let container = [];
-for(juguetes of toys){
-    if(toys.includes("gato")){
-        console.log(toys);
+for(let juguetes of toys){
+    if(!juguetes.name.includes("gato")){
+        container.push(juguetes);
     }
 }
+console.log(container)
