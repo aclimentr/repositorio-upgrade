@@ -1,0 +1,17 @@
+.c-gallery{
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=6344&resolucion=3840x2160");
+    &__item{
+        // background-color: rgb(129, 20, 20);
+        background-image: url("https://e1.pxfuel.com/desktop-wallpaper/454/117/desktop-wallpaper-rick-and-morty-portal-iphone-rick-and-morty-portal-thumbnail.jpg");
+        padding: 12px;
+        border-radius: 148px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+    }
+  
+}

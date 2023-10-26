@@ -1,0 +1,17 @@
+//en primer lugar van las variables
+
+
+//luego los estilos ajenos como bootstrap
+@import "~bootstrap/scss/bootstrap-grid";
+
+
+//luego los elementos
+@import "styles/elements/img.elements";
+@import "styles/elements/h2.elements";
+@import "styles/elements/p.elements";
+@import "styles/elements/body.elements";
+
+//luego los bloques
+@import "styles/blocks/btn.blocks"
+
+//y luego las utilities
